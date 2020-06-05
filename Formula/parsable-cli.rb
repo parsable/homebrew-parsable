@@ -9,7 +9,7 @@ class ParsableCli < Formula
 
   def install
     inreplace "bin/parsable-cli", /^CLIENT_HOME=/, "export PARSABLECLI_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
-    bin.install_symlink libexec/"bin/parsable-cli"
+    bin.install "bin/parsable-cli"
   end
 
   test do
