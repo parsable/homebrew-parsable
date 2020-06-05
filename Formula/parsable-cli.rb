@@ -8,11 +8,11 @@ class ParsableCli < Formula
   sha256 ""
 
   def install
-    inreplace "bin/parsable-cli", /^CLIENT_HOME=/, "export PARSABLECLI_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
+    inreplace "bin/parsable-cli", /^CLIENT_HOME=/, "export PARSABLECLI_OCLIF_CLIENT_HOME=#{src/"client"}\nCLIENT_HOME="
     bin.install "bin/parsable-cli"
   end
 
   test do
-    system bin/"parsable", "version"
+    system bin/"parsable-cli", "version"
   end
 end
