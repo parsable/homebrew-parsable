@@ -1,2 +1,2 @@
-# homebrew-parsable-cli
-Repo to host the homebrew formula
+# homebrew-parsable
+Repo to host Parsable homebrew formulas
