@@ -4,7 +4,7 @@
 class ParsableCli < Formula
   desc "Everything you need to get started with Parsable"
   homepage ""
-  url "https://parsable-cli.s3-us-west-2.amazonaws.com/parsable-cli.tar.gz"
+  url "https://parsable-cli.s3-us-west-2.amazonaws.com/parsable-cli-v0.0.0/parsable-cli-v0.0.0.tar.gz"
   version ""
   sha256 ""
 
