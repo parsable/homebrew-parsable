@@ -6,10 +6,10 @@ class ParsableCli < Formula
   homepage ""
   url "https://parsable-cli.s3-us-west-2.amazonaws.com/parsable-cli-v0.0.0/parsable-cli-v0.0.0.tar.gz"
   sha256 ""
+  depends_on "node@12"
 
   def install
     inreplace "bin/parsable-cli", /^CLIENT_HOME=/, "export PARSABLECLI_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
-    # bin.install "bin/parsable-cli"
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/parsable-cli"
   end
